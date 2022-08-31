@@ -1,0 +1,146 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+li,button, h2, h4, p, a{
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(20, 106, 72);
+  text-decoration: none;
+
+
+}
+
+
+main{
+  background-image:url("../images/green_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /**permite que se tenga siempre el mismo background, independiente de la altura**/
+  min-height: 100vh; /** super importante sino no se muestra la foto de fondo**/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10%;
+  height: 150px;
+
+
+}
+
+.logo {
+  cursor:pointer;
+  margin-right: auto;
+  height: 9rem;
+}
+
+.cabecera{
+  background-color: #F6F6E9;
+  position: sticky;
+  top:0px; /**permite definir el header a pesar de scrollear hacia abajo**/
+}
+
+.nav__links ul {
+  list-style: none;
+}
+
+.nav__links li{
+  display: inline-block;
+  padding: 0px 10px;
+
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color:inherit;
+
+}
+
+.nav__links li a:hover{
+  color: rgb(16, 124, 153);
+}
+
+button{
+  padding: 10px 20px;
+  background-color: rgb(127, 215, 205);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  tranistion: all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: rgb(119, 222, 222);
+}
+
+
+
+
+
+.paginaTitulos{
+
+  padding: 30px;
+
+}
+.cards{
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.card{
+  background-color: rgb(62, 227, 191);
+  border-radius: 50px;
+  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover{
+  
+  transform: translateY(-5px) scale(1.010) translateZ(0);
+  box-shadow: 0 24px 36px rgba(44, 121, 236, 0.753),
+    0 25px 50px var(--box-shadow-color);
+}
+
+.card__imagen{
+  margin-top: 40px;
+  width: 300px;
+  border-radius: 50px;
+  
+  vertical-align:middle;
+  
+}
+
+.card__div{
+  padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}

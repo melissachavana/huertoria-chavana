@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Landing page</title>
 
+    <link rel="stylesheet" href="./css/bootstrap-5.2.0-dist_css_bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
   <body>
 
     
-    <main class="container">
+    <main class="">
       <div id="grilla" class="grid">
 
         <header class="cabecera">
@@ -29,11 +30,27 @@
         <a class="cta" href="./pages/contacto.html"><button> Contacto </button></a>
         </header>
   
-        <section class="imagenPrincipal">
-          <h2 class="paginaTitulos">Bienvenidos</h2>
+        <section class="seccionPrincipal">
+          <div class="textoPrincipal">
+            <h1>Empezar tu huerto en casa nunca fue tan sencillo</h1>
+            <h2>Todo lo que necesitas para tu huerto en casa.</h2>
+            <a class="cta" href="./pages/semilleros.html"><button> Personalizar mi huerto </button></a>
+          </div>
+          <div class="imagenPrincipal">
+            <img class="card__imagenPrincipal" src="./images/Semillero_foto.png" alt="semillero" />
+          </div>
+        
         </section >
 
+        <section class="seccionCards">
+
+          <h2 class="pasos">Pasos para comenzar tu huerto</h2>
+
+        </section>
+
+
         <section class="cards">
+          
           <div class="card">
             <img class="card__imagen" src="./images/maceta.png" alt="maceta" />
             <div class="card__div">
@@ -48,9 +65,9 @@
           <div class="card">
             <img class="card__imagen" src="./images/semillas.png" alt="semillas" />
             <div class="card__div">
-              <h4 class="card__titulo"> Maceta </h4>
+              <h4 class="card__titulo"> Semillas </h4>
               <p class="card__descripcion">
-                El recipiente adecuado para tus plantas.
+                La mejor variedad y selección especial. 
               </p>
               <a href="#" class="card__boton">Ver mas...</a>
             </div>
@@ -59,18 +76,34 @@
           <div class="card">
             <img class="card__imagen" src="./images/abono.png" alt="abono" />
             <div class="card__div">
-              <h4 class="card__titulo"> Maceta </h4>
+              <h4 class="card__titulo"> Abono </h4>
               <p class="card__descripcion">
-                El recipiente adecuado para tus plantas.
+                Los nutrientes adecuados para el mejor crecimiento. 
               </p>
               <a href="#" class="card__boton">Ver mas...</a>
             </div>
           </div>
           
         </section>
-  
-        <article class="articulo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, amet doloremque eligendi quae asperiores obcaecati, mollitia aliquam tempora rerum adipisci facilis harum itaque doloribus recusandae magni debitis, magnam quia? Dolor.</article>
-        <footer class="pie">Pie de página</footer>
+        
+        <section class="seccionSecundaria">
+          
+          <div class="textoSecundario">
+            <h2 class="pasos">Cultivar nuestros propios alimentos benefcia al planeta.</h2>
+            <br>
+            <p class="parrafo">Aproximadamente el 25% de las emisiones mundiales de carbono se deben a la producción mundial de alimentos. </p>
+            
+            <p>Sin embargo, si cultivas tus propias frutas y verduras, no se producen emisiones de carbono. De hecho, es posible 
+            </p>
+            
+          </div>
+          
+        
+        </section >
+
+        <article class="articulo"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, amet doloremque eligendi quae asperiores obcaecati, mollitia aliquam tempora rerum adipisci facilis harum itaque doloribus recusandae magni debitis, magnam quia? Dolor.</article>
+        
+        <footer class="piePagina">©Copyright Huertoria 2022. Todos los derechos reservados.</footer>
 
 
       </div>
@@ -78,7 +111,8 @@
     </main>
 
        
-
+    <script src="./js/bootstrap-5.2.0-dist_js_bootstrap.bundle.min.js"></script>
+    <script src="./js/scrolling.js"></script>
 
   </body>
 </html>
